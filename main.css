@@ -134,8 +134,8 @@ main{
         - Use relative positioning to bump this upward
     */
     position: relative;
-    bottom: 50px;
-    flex-basis: 80%;
+    top: -50px;
+    flex-basis: 70%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -149,8 +149,11 @@ aside{
         - Flexbox: Set the starting width of this element
         - Use relative positioning to bump this upward
     */
-    align-self: flex-end;
-    flex-basis: 12%;
+    /*align-self: flex-end;*/
+    flex-basis: 19%;
+    position: relative;
+    top: -50px;
+
 }
 aside h3{
     text-align: center;
