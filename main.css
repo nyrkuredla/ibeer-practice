@@ -36,6 +36,9 @@ img{
         - Create a flexbox containerer for
         the major page sections
     */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 #site-header{
     /*
@@ -43,6 +46,8 @@ img{
         - Flexbox property here
 
     */
+    flex-basis: 100%;
+    align-self: flex-start;
     display: flex;
     flex-direction: column;
 }
@@ -81,6 +86,7 @@ img{
 }
 #main-navigation{
     background: #444;
+    width: 100%;
 
     /*
         TODO:
@@ -88,7 +94,8 @@ img{
     */
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    flex-wrap: nowrap;
+    justify-content: center;
 }
 #main-navigation a{
     display: block;
@@ -101,9 +108,15 @@ img{
         TODO:
         - Flexbox - Create general spacing between nav links
     */
+    flex-basis: 10%;
+    flex-grow: 1;
 }
 #main-navigation #logo{
     margin-right: 400px;
+    flex-grow: 2;
+    text-align: center;
+
+
 
     /*
         TODO:
@@ -120,6 +133,12 @@ main{
         - Flexbox: Set the starting width of this element
         - Use relative positioning to bump this upward
     */
+    position: relative;
+    bottom: 50px;
+    flex-basis: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 aside{
     padding: 20px;
@@ -130,6 +149,8 @@ aside{
         - Flexbox: Set the starting width of this element
         - Use relative positioning to bump this upward
     */
+    align-self: flex-end;
+    flex-basis: 12%;
 }
 aside h3{
     text-align: center;
@@ -147,6 +168,8 @@ article{
     box-shadow: -5px 5px 8px rgba( 0, 0, 0, 0.3 );
     padding: 20px;
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
 }
 article h2{
     line-height: 1em;
@@ -170,6 +193,7 @@ article img{
         - Float article images to the right
         and match sizes and spacing to the mockup
     */
+    justify-content: flex-end;
 }
 article footer p{
     /*
