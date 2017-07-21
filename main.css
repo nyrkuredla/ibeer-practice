@@ -171,6 +171,11 @@ article {
     box-shadow: -5px 5px 8px rgba( 0, 0, 0, 0.3 );
     padding: 20px;
     margin-bottom: 20px;
+
+}
+
+article header {
+  width: 100%;
 }
 
 article h2{
@@ -189,6 +194,11 @@ article time{
     margin-bottom: 30px;
     color: #666;
 }
+
+article > p:first-of-type {
+  min-height: 225px;
+}
+
 article img{
     /*
         TODO:
@@ -197,9 +207,11 @@ article img{
     */
     float: right;
     width: 300px;
-    margin-left: 5px;
 }
 
+article footer {
+  width: 100%;
+}
 
 article footer p{
     /*
